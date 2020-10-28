@@ -19,8 +19,16 @@ body {
     box-shadow: 3px 3px 20px gray;
 }
 
+.main{
+    position: relative;
+}
+
 h1 {
     text-align: center;
+}
+
+h3{
+    margin-bottom: 20px;
 }
 
 ol {
@@ -59,7 +67,6 @@ input {
     width: 90%;
     max-width: 500px;
     margin: auto;
-    display: block;
     padding: 10px;
 
     font-size: 1rem;
@@ -91,6 +98,11 @@ input:focus {
     display: none;
 }
 
+#btn_erase_task{
+    margin-left: 10px;
+    display: none;
+}
+
 #alert_message {
     margin-top: 20px;
     padding: 20px;
@@ -98,6 +110,33 @@ input:focus {
     text-align: center;
 
     color: red;
+}
+
+#confirm_box{
+    max-width: 45%;
+    min-width: 30%;
+
+    display: none;
+
+    border: 1px solid lightgray;
+
+    background-color: white;
+
+    margin-top: 0px;
+    padding: 30px;
+
+    box-shadow: 3px 3px 20px gray;
+
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#btn_yes, #btn_no{
+
+    max-width: 80px;
+    display: inline-block;
 }
 
 div {
