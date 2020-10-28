@@ -112,7 +112,7 @@ input:focus {
     color: red;
 }
 
-.confirm_box{
+#confirm_box{
     max-width: 45%;
     min-width: 30%;
 
