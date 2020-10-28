@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Intermediate - Desafio LocalStorage</title>
+
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="main">
+        <h1>Task List</h1><br>
+        <input id="task_input" onfocus="clearAlert()" type="text" placeholder="Enter the task here"><br><br>
+
+        <button id="add_Task" class="btn" onClick="create_list()">Add Task</button>
+        <div id="erase_btn">
+            <button class="btn" onClick="show_erase_field()">Erase Task</button>
+            <button class="btn" onClick="erase_List()">Erase List</button>
+        </div>
+        <div id="erase_task">
+            <label id="task_eraser_label">Enter Task Number:</label>
+            <input id="task_eraser" type="text" placeholder="Task #">
+            <button id="btn_erase_task" class="btn" onclick="erase_Task()">Erase</button>
+        </div>
+
+        <div class="confirm_box">
+            <h3>Are you sure you want to proceed?</h3>
+            <button id="btn_yes" class="btn" onclick="confirm_Erase(this)">Yes</button>
+            <button id="btn_no" class="btn" onclick="hide_Decision_Box()">No</button>
+        </div>
+
+        <br><br>
+        <ol id="ol_list"></ol>
+    </div>
+    <h2 id="alert_message"></h2>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
